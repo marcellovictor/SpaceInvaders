@@ -8,13 +8,13 @@ def iniciar_jogo(dificuldade):
     jogo.set_title("Space Invaders")
 
     # nave
-    nave = Sprite("navezinha.png", 1)
+    nave = Sprite("images\\navezinha.png", 1)
     nave.x = jogo.width/2 - nave.width/2
     nave.y = jogo.height - 100
     vel_nave = 120 + (30/dificuldade)
 
     # tiro
-    tiro = Sprite("tirinho.png", 1)
+    tiro = Sprite("images\\tirinho.png", 1)
     tiro.x = nave.x + nave.width/2 - tiro.width/2 + 1
     tiro.y = nave.y - tiro.height
     tiros = []
@@ -33,7 +33,7 @@ def iniciar_jogo(dificuldade):
 
         # efetuar disparos
         if teclado.key_pressed("SPACE") and crono >= dificuldade/3:
-            tir = [Sprite("tirinho.png"),
+            tir = [Sprite("images\\tirinho.png"),
                    nave.x + nave.width/2 - tiro.width/2 + 1,
                    nave.y - tiro.height]
             tiros.append(tir)

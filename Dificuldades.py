@@ -10,29 +10,29 @@ def selecionar_dificuldade():
     mouse_dificuldades = Mouse()
 
     # facil
-    button_facil = Sprite("button-facil.jpg", 1)
+    button_facil = Sprite("images\\button-facil.jpg", 1)
     button_facil.x = dificuldades.width/2 - button_facil.width/2
     button_facil.y = dificuldades.height/3 - button_facil.height
 
-    selected_facil = Sprite("selected-facil.jpg", 1)
+    selected_facil = Sprite("images\\selected-facil.jpg", 1)
     selected_facil.x = dificuldades.width / 2 - button_facil.width / 2
     selected_facil.y = dificuldades.height / 3 - button_facil.height
 
     # medio
-    button_medio = Sprite("button-medio.jpg", 1)
+    button_medio = Sprite("images\\button-medio.jpg", 1)
     button_medio.x = dificuldades.width/2 - button_medio.width/2
     button_medio.y = button_facil.y + 150
 
-    selected_medio = Sprite("selected-medio.jpg", 1)
+    selected_medio = Sprite("images\\selected-medio.jpg", 1)
     selected_medio.x = dificuldades.width / 2 - button_medio.width / 2
     selected_medio.y = button_facil.y + 150
 
     # dificil
-    button_dificil = Sprite("button-dificil.jpg", 1)
+    button_dificil = Sprite("images\\button-dificil.jpg", 1)
     button_dificil.x = dificuldades.width/2 - button_dificil.width/2
     button_dificil.y = button_medio.y + 150
 
-    selected_dificil = Sprite("selected-dificil.jpg", 1)
+    selected_dificil = Sprite("images\\selected-dificil.jpg", 1)
     selected_dificil.x = dificuldades.width / 2 - button_dificil.width / 2
     selected_dificil.y = button_medio.y + 150
 

@@ -13,39 +13,39 @@ def abrir_menu():
     teclado = Keyboard()
 
     # jogar
-    button_jogar = Sprite("button-jogar.jpg", 1)
+    button_jogar = Sprite("images\\button-jogar.jpg", 1)
     button_jogar.x = menu.width/2 - button_jogar.width/2
     button_jogar.y = menu.height/4
 
-    selected_jogar = Sprite("selected-jogar.jpg", 1)
+    selected_jogar = Sprite("images\\selected-jogar.jpg", 1)
     selected_jogar.x = menu.width/2 - button_jogar.width/2
     selected_jogar.y = menu.height/4
 
     # dificuldade
 
-    button_dificuldade = Sprite("button-dificuldade.jpg", 1)
+    button_dificuldade = Sprite("images\\button-dificuldade.jpg", 1)
     button_dificuldade.x = menu.width/2 - button_dificuldade.width/2
     button_dificuldade.y = button_jogar.y + 100
 
-    selected_dificuldade = Sprite("selected-dificuldade.jpg", 1)
+    selected_dificuldade = Sprite("images\\selected-dificuldade.jpg", 1)
     selected_dificuldade.x = menu.width/2 - button_dificuldade.width/2
     selected_dificuldade.y = button_jogar.y + 100
 
     # ranking
-    button_ranking = Sprite("button-ranking.jpg", 1)
+    button_ranking = Sprite("images\\button-ranking.jpg", 1)
     button_ranking.x = menu.width/2 - button_ranking.width/2
     button_ranking.y = button_dificuldade.y + 100
 
-    selected_ranking = Sprite("selected-ranking.jpg", 1)
+    selected_ranking = Sprite("images\\selected-ranking.jpg", 1)
     selected_ranking.x = menu.width/2 - button_ranking.width/2
     selected_ranking.y = button_dificuldade.y + 100
 
     # sair
-    button_sair = Sprite("button-sair.jpg", 1)
+    button_sair = Sprite("images\\button-sair.jpg", 1)
     button_sair.x = menu.width/2 - button_sair.width/2
     button_sair.y = button_ranking.y + 100
 
-    selected_sair = Sprite("selected-sair.jpg", 1)
+    selected_sair = Sprite("images\\selected-sair.jpg", 1)
     selected_sair.x = menu.width/2 - button_sair.width/2
     selected_sair.y = button_ranking.y + 100
 
