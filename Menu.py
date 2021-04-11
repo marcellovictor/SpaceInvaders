@@ -2,12 +2,14 @@ from PPlay.window import *
 from PPlay.sprite import *
 from PPlay.mouse import *
 from PPlay.keyboard import *
-from enum import Enum
+from PPlay.gameimage import *
 
 
 def abrir_menu():
     menu = Window(800, 600)
     menu.set_title("Menu")
+    
+    background_menu = GameImage("images\\X-wing.jpg")
 
     mouse = Mouse()
     teclado = Keyboard()
@@ -63,6 +65,7 @@ def abrir_menu():
             return 4
 
         # desenho
+        background_menu.draw()
         selected_jogar.draw() if mouse.is_over_object(button_jogar) else button_jogar.draw()
         selected_dificuldade.draw() if mouse.is_over_object(button_dificuldade) else button_dificuldade.draw()
         selected_ranking.draw() if mouse.is_over_object(button_ranking) else button_ranking.draw()

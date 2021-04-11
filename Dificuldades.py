@@ -1,11 +1,14 @@
 from PPlay.mouse import *
 from PPlay.window import *
 from PPlay.sprite import *
+from PPlay.gameimage import *
 
 
 def selecionar_dificuldade():
     dificuldades = Window(800, 600)
     dificuldades.set_title("Dificuldades")
+
+    background_dificuldades = GameImage("images\\nave-dificuldades.jpg")
     
     mouse_dificuldades = Mouse()
 
@@ -48,6 +51,7 @@ def selecionar_dificuldade():
             return 3
 
         # desenho
+        background_dificuldades.draw()
         selected_facil.draw() if mouse_dificuldades.is_over_object(button_facil) else button_facil.draw()
         selected_medio.draw() if mouse_dificuldades.is_over_object(button_medio) else button_medio.draw()
         selected_dificil.draw() if mouse_dificuldades.is_over_object(button_dificil) else button_dificil.draw()

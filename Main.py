@@ -18,7 +18,7 @@ while True:
     if option_selected == 1:
         sleep(0.2)
         estado = 1
-        iniciar_jogo(nivel_dificuldade)
+        iniciar_jogo(nivel_dificuldade, estado    )
     elif option_selected == 2:
         sleep(0.2)
         estado = 2
